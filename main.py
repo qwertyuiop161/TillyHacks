@@ -43,11 +43,6 @@ def safe_read_text(path: Path, max_bytes=2048) -> str:
     except Exception:
         return ""
 
-# --- LLM CONFIGURATION ---
-# Ensure you have 'google-generativeai' installed: pip install google-generativeai
-# Set your API Key as an environment variable or paste it here.
-genai.configure(api_key=os.environ.get("GEMINI_API_KEY", "AIzaSyA0nJGLOEm0i-OvSpjwQpkoKqpw8famp-w"))
-
 def get_image_dimensions(path: str) -> tuple:
     """Get image width and height, return (w, h) or None"""
     try:
