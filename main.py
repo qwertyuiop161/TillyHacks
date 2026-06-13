@@ -29,7 +29,7 @@ TEXT_EXTENSIONS = {".txt", ".md", ".csv", ".log", ".json", ".xml", ".py", ".js",
 # --- LLM CONFIGURATION ---
 # Ensure you have 'google-generativeai' installed: pip install google-generativeai
 # Set your API Key as an environment variable or paste it here.
-genai.configure(api_key=os.environ.get("GEMINI_API_KEY", "AIzaSyA0nJGLOEm0i-OvSpjwQpkoKqpw8famp-w"))
+genai.configure(api_key=os.environ.get("GEMINI_API_KEY", "YOUR_API_KEY_HERE"))
 
 def safe_read_text(path: Path, max_bytes=2048) -> str:
     try:
